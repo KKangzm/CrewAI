@@ -19,13 +19,13 @@ from crew import CrewtestprojectCrew
 
 # 模型全局参数配置  根据自己的实际情况进行调整
 # openai模型相关配置 根据自己的实际情况进行调整
-OPENAI_API_BASE = "https://api.wlai.vip/v1"
-OPENAI_CHAT_API_KEY = "sk-CU5Dncdg7OebzZm4Fa532b1cBf134447A93fE109Bd2d1b19"
-OPENAI_CHAT_MODEL = "gpt-4o-mini"
+OPENAI_API_BASE = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+OPENAI_CHAT_API_KEY = "sk-490133a6aca34cc897012c37ec14d06c"
+OPENAI_CHAT_MODEL = "qwen-turbo"
 # 非gpt大模型相关配置(oneapi方案 通义千问为例) 根据自己的实际情况进行调整
-ONEAPI_API_BASE = "http://139.224.72.218:3000/v1"
-ONEAPI_CHAT_API_KEY = "sk-0FxX9ncd0yXjTQF877Cc9dB6B2F44aD08d62805715821b85"
-ONEAPI_CHAT_MODEL = "qwen-max"
+ONEAPI_API_BASE = "http://localhost:3000/v1"
+ONEAPI_CHAT_API_KEY = "sk-5duZ69TNuRs3LfrQ02561f30A7B24cAcA466F3E224E86fEa"
+ONEAPI_CHAT_MODEL = "qwen-turbo"
 # 本地大模型相关配置(Ollama方案 llama3.1:latest为例) 根据自己的实际情况进行调整
 OLLAMA_API_BASE = "http://localhost:11434/v1"
 OLLAMA_CHAT_API_KEY = "ollama"
@@ -37,7 +37,7 @@ model = None
 # API服务设置相关  根据自己的实际情况进行调整
 PORT = 8012  # 服务访问的端口
 # openai:调用gpt大模型;oneapi:调用非gpt大模型;ollama:调用本地大模型
-MODEL_TYPE = "openai"
+MODEL_TYPE = "oneapi"
 
 
 
